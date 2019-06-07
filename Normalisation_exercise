@@ -1,0 +1,9 @@
+UF = dental_practice (apptDate, apptTime, patientNo, patientName, surgeryNo, staffNo, dentistName)
+
+1NF = dental_practice(apptDate, apptTime, patientNo, patientName, surgeryNo, staffNo, dentistName)
+keys(apptDate, apptTime, patientNo)
+
+2NF = Staff(staffNo, dentistName)
+patient(patientNo, patientName)
+appointment(appointment.date, appointment.time, surgeryNo)
+keys(staffNo, patientNo, surgeryNo -  staffNo - patientNo)
